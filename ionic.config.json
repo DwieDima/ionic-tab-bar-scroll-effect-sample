@@ -1,0 +1,7 @@
+{
+  "name": "scroll-effect-test",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}

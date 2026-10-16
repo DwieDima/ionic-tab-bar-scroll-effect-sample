@@ -1,0 +1,19 @@
+<ion-header scrollEffect="hide">
+  <ion-toolbar>
+    <ion-title>Tab 1 (header + tab bar hide)</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item routerLink="/tabs/tab1/detail" detail>
+      <ion-label>Open sub page (tab bar stays, the default)</ion-label>
+    </ion-item>
+    <ion-item routerLink="/tabs/tab1/detail-effect" detail>
+      <ion-label>Open sub page with tabBarScrollEffect</ion-label>
+    </ion-item>
+    @for (i of items; track i) {
+      <ion-item><ion-label>Tab 1 item {{ i }}</ion-label></ion-item>
+    }
+  </ion-list>
+</ion-content>

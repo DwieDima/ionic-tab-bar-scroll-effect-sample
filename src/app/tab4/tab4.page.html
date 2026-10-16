@@ -1,0 +1,107 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>More examples (header stays, tab bar hides)</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-list-header>Footer</ion-list-header>
+    <ion-item routerLink="/tabs/tab4/footer-hide" detail>
+      <ion-label>
+        Footer hides
+        <p>
+          ion-footer scrollEffect="hide". The tab bar stays, since this page can
+          go back.
+        </p>
+      </ion-label>
+    </ion-item>
+    <ion-item routerLink="/tabs/tab4/footer-fade" detail>
+      <ion-label>
+        Footer fades
+        <p>
+          ion-footer scrollEffect="fade". The footer background fades out at the
+          end of the content.
+        </p>
+      </ion-label>
+    </ion-item>
+    <ion-item routerLink="/tabs/tab4/combined" detail>
+      <ion-label>
+        Header, footer and tab bar hide together
+        <p>
+          The page opts in with tabBarScrollEffect, so all three bars follow the
+          scroll.
+        </p>
+      </ion-label>
+    </ion-item>
+
+    <ion-list-header>Header</ion-list-header>
+    <ion-item routerLink="/tabs/tab4/multi-toolbar" detail>
+      <ion-label>
+        Header with multiple toolbars
+        <p>
+          Title, searchbar and segment toolbars in one ion-header that hides.
+        </p>
+      </ion-label>
+    </ion-item>
+    <ion-item routerLink="/tabs/tab4/large-title" detail>
+      <ion-label>
+        iOS large title
+        <p>
+          Collapsing large title (scrollEffect="condense"). Best viewed in iOS
+          mode: add ?ionic:mode=ios.
+        </p>
+      </ion-label>
+    </ion-item>
+    <ion-item routerLink="/tabs/tab4/large-title-hide" detail>
+      <ion-label>
+        iOS large title + header hide
+        <p>
+          The large title page where the main header also has
+          scrollEffect="hide".
+        </p>
+      </ion-label>
+    </ion-item>
+
+    <ion-list-header>Modal</ion-list-header>
+    <ion-item button detail (click)="isModalOpen = true">
+      <ion-label>
+        Open modal
+        <p>
+          The modal has its own header and footer that hide. The tab bar behind
+          it is not affected.
+        </p>
+      </ion-label>
+    </ion-item>
+
+    <ion-list-header>Filler, so this page can scroll</ion-list-header>
+    @for (i of items; track i) {
+    <ion-item><ion-label>More item {{ i }}</ion-label></ion-item>
+    }
+  </ion-list>
+
+  <ion-modal [isOpen]="isModalOpen" (didDismiss)="isModalOpen = false">
+    <ng-template>
+      <ion-header scrollEffect="hide">
+        <ion-toolbar>
+          <ion-title>Modal (header + footer hide)</ion-title>
+          <ion-buttons slot="end">
+            <ion-button (click)="isModalOpen = false">Close</ion-button>
+          </ion-buttons>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content>
+        <ion-list>
+          @for (i of items; track i) {
+          <ion-item><ion-label>Modal item {{ i }}</ion-label></ion-item>
+          }
+        </ion-list>
+      </ion-content>
+      <ion-footer scrollEffect="hide">
+        <ion-toolbar>
+          <ion-title>Modal footer</ion-title>
+        </ion-toolbar>
+      </ion-footer>
+    </ng-template>
+  </ion-modal>
+</ion-content>
