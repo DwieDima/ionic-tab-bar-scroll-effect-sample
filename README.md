@@ -3,7 +3,7 @@
 An Angular (standalone) tabs app for trying the `scrollEffect` of `ion-tab-bar`, `ion-header`, and `ion-footer`, including the new `fade` effect for the tab bar and the `tabBarScrollEffect` property of `ion-content`.
 
 It uses a build of the Ionic Framework from the pull request
-[feat(tab-bar): add fade scroll effect](https://github.com/DwieDima/ionic-framework-tabtap/pull/2).
+[feat(tab-bar): add fade scroll effect](https://github.com/ionic-team/ionic-framework/pull/31578).
 The built packages are in [`.local-ionic`](.local-ionic), so nothing has to be built to run it.
 
 ## Run
