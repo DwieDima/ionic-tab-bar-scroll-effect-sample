@@ -13,40 +13,53 @@ export const routes: Routes = [
       },
       {
         path: 'tab1/detail',
-        loadComponent: () => import('../tab1/detail.page').then((m) => m.Tab1DetailPage),
+        loadComponent: () =>
+          import('../tab1/detail.page').then((m) => m.Tab1DetailPage),
       },
       {
         path: 'tab1/detail-effect',
         data: { tabBarScrollEffect: true },
-        loadComponent: () => import('../tab1/detail.page').then((m) => m.Tab1DetailPage),
+        loadComponent: () =>
+          import('../tab1/detail.page').then((m) => m.Tab1DetailPage),
       },
       {
         path: 'tab4',
-        loadComponent: () => import('../tab4/tab4.page').then((m) => m.Tab4Page),
+        loadComponent: () =>
+          import('../tab4/tab4.page').then((m) => m.Tab4Page),
       },
       {
         path: 'tab4/footer-hide',
-        loadComponent: () => import('../tab4/footer-hide.page').then((m) => m.Tab4FooterHidePage),
+        loadComponent: () =>
+          import('../tab4/footer-hide.page').then((m) => m.Tab4FooterHidePage),
       },
       {
         path: 'tab4/footer-fade',
-        loadComponent: () => import('../tab4/footer-fade.page').then((m) => m.Tab4FooterFadePage),
+        loadComponent: () =>
+          import('../tab4/footer-fade.page').then((m) => m.Tab4FooterFadePage),
       },
       {
         path: 'tab4/multi-toolbar',
-        loadComponent: () => import('../tab4/multi-toolbar.page').then((m) => m.Tab4MultiToolbarPage),
+        loadComponent: () =>
+          import('../tab4/multi-toolbar.page').then(
+            (m) => m.Tab4MultiToolbarPage,
+          ),
       },
       {
         path: 'tab4/large-title',
-        loadComponent: () => import('../tab4/large-title.page').then((m) => m.Tab4LargeTitlePage),
+        loadComponent: () =>
+          import('../tab4/large-title.page').then((m) => m.Tab4LargeTitlePage),
       },
       {
         path: 'tab4/large-title-hide',
-        loadComponent: () => import('../tab4/large-title-hide.page').then((m) => m.Tab4LargeTitleHidePage),
+        loadComponent: () =>
+          import('../tab4/large-title-hide.page').then(
+            (m) => m.Tab4LargeTitleHidePage,
+          ),
       },
       {
         path: 'tab4/combined',
-        loadComponent: () => import('../tab4/combined.page').then((m) => m.Tab4CombinedPage),
+        loadComponent: () =>
+          import('../tab4/combined.page').then((m) => m.Tab4CombinedPage),
       },
       {
         path: 'tab2',

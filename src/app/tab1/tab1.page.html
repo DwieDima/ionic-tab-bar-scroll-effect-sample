@@ -1,6 +1,6 @@
 <ion-header scrollEffect="hide">
   <ion-toolbar>
-    <ion-title>Tab 1 (header + tab bar hide)</ion-title>
+    <ion-title>{{ title }}</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -13,7 +13,7 @@
       <ion-label>Open sub page with tabBarScrollEffect</ion-label>
     </ion-item>
     @for (i of items; track i) {
-      <ion-item><ion-label>Tab 1 item {{ i }}</ion-label></ion-item>
+    <ion-item><ion-label>Tab 1 item {{ i }}</ion-label></ion-item>
     }
   </ion-list>
 </ion-content>

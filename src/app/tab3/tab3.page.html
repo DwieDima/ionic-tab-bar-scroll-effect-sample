@@ -1,13 +1,13 @@
 <ion-header scrollEffect="hide">
   <ion-toolbar>
-    <ion-title>Tab 3 (header + tab bar hide)</ion-title>
+    <ion-title>{{ title }}</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <ion-list>
     @for (i of items; track i) {
-      <ion-item><ion-label>Tab 3 item {{ i }}</ion-label></ion-item>
+    <ion-item><ion-label>Tab 3 item {{ i }}</ion-label></ion-item>
     }
   </ion-list>
 </ion-content>
