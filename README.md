@@ -28,6 +28,7 @@ Add `?ionic:mode=ios` or `?ionic:mode=md` to the URL to switch the mode. The iOS
 | Tab 1, sub page with `tabBarScrollEffect` | A page that can go back, but applies the tab bar scroll effect. |
 | Tab 2 | Static header, the tab bar hides. |
 | Tab 3 | Header and tab bar hide, after switching tabs. |
+| More, tab bar fade | A translucent tab bar over fullscreen content. Its background fades out at the end of the content. |
 | More, footer | `ion-footer` with `scrollEffect="hide"` and `"fade"`. |
 | More, header, footer and tab bar | All three hide together, without a gap. |
 | More, header | A header with multiple toolbars, and the iOS large title with and without `scrollEffect="hide"`. |
